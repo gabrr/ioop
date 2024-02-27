@@ -1,4 +1,4 @@
-import { HocType } from "@/types/ui/hoc";
+import { HocType } from "@/types/ui/Hoc";
 
 interface Props {
   time: string;

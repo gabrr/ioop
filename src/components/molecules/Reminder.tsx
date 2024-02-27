@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { Card } from "./hocs/card";
+import { Card } from "./hocs/Card";
 
 interface Props {
   body: string;
