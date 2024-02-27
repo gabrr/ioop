@@ -7,7 +7,7 @@ interface Props {
   icon: ReactNode;
 }
 
-const Reminder: React.FC<Props> = ({ time, body, icon }) => {
+const Reminder = Card<Props>(({ time, body, icon }) => {
   return (
     <>
       <div className="flex justify-between items-center">
@@ -19,6 +19,6 @@ const Reminder: React.FC<Props> = ({ time, body, icon }) => {
       <h3>{body}</h3>
     </>
   );
-};
+});
 
-export default Card<Props>(Reminder);
+export default Reminder;
