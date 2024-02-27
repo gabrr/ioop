@@ -10,13 +10,13 @@ interface Props {
 const Reminder = card<Props>(({ time, body, icon }) => {
   return (
     <>
-      <div className="flex justify-between items-center text-slate-300">
+      <div className="flex text-sm font-semibold justify-between items-center text-orange-500">
         <p>{time}</p>
 
-        {icon}
+        <span className="scale-[200%]">{icon}</span>
       </div>
 
-      <h3 className="text-slate-300">{body}</h3>
+      <h3 className="text-gray-600">{body}</h3>
     </>
   );
 });
