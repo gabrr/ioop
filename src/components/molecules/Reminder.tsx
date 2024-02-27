@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { Card } from "./hocs/Card";
+import { card } from "./hocs/card";
 
 interface Props {
   body: string;
@@ -7,7 +7,7 @@ interface Props {
   icon: ReactNode;
 }
 
-const Reminder = Card<Props>(({ time, body, icon }) => {
+const Reminder = card<Props>(({ time, body, icon }) => {
   return (
     <>
       <div className="flex justify-between items-center">
@@ -21,4 +21,4 @@ const Reminder = Card<Props>(({ time, body, icon }) => {
   );
 });
 
-export default Reminder;
+export default Reminder.Component;

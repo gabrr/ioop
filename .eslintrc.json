@@ -1,6 +1,3 @@
 {
-	"extends": "next/core-web-vitals",
-	"rules": {
-		"react/display-name": false
-	}
+	"extends": "next/core-web-vitals"
 }
