@@ -7,9 +7,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   useEffect(() => {
-    setInterval(() => {
+    const interval = setInterval(() => {
       window.location.reload();
-    }, 1_000 * 60 * 10);
+    }, 1_000 * 60 * 2);
+
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   return (
