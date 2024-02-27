@@ -11,7 +11,7 @@ const format = Intl.DateTimeFormat("us", {
   minute: "2-digit",
 }).format;
 
-export const card: HocType<Props> = (Component: React.FC<any>) => (props) => {
+export const Card: HocType<Props> = (Component: React.FC<any>) => (props) => {
   const time = format(new Date(props.time));
 
   return (

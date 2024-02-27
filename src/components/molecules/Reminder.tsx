@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { card } from "./hocs/card";
+import { Card } from "./hocs/card";
 
 interface Props {
   body: string;
@@ -21,4 +21,4 @@ const Reminder: React.FC<Props> = ({ time, body, icon }) => {
   );
 };
 
-export default card<Props>(Reminder);
+export default Card<Props>(Reminder);
