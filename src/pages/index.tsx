@@ -1,5 +1,5 @@
 import Title from "@/components/atoms/Title";
-import Reminder from "@/components/molecules/Reminder";
+import Reminder from "@/components/molecules/Card";
 import { Inter } from "next/font/google";
 import { useEffect } from "react";
 
@@ -24,8 +24,23 @@ export default function Home() {
         <Title>Daily Goals</Title>
 
         <Reminder
+          type="Goal"
+          body="List 3 things to be grateful"
+          icon={"🙋🏻‍♀️"}
+          time={new Date().toISOString()}
+        />
+
+        <Reminder
+          type="Goal"
           body="Workout - legs, arms and running"
-          icon={"🙋🏻‍♂️"}
+          icon={"👩🏻‍❤️‍👨🏽"}
+          time={new Date().toISOString()}
+        />
+
+        <Reminder
+          type="Goal"
+          body="Read bible"
+          icon={"👩🏻‍❤️‍👨🏽"}
           time={new Date().toISOString()}
         />
       </div>
@@ -34,6 +49,7 @@ export default function Home() {
         <Title>Reminders</Title>
 
         <Reminder
+          type="Reminder"
           body="Workout - legs, arms and running"
           icon={"🙋🏻‍♂️"}
           time={new Date().toISOString()}
@@ -44,6 +60,7 @@ export default function Home() {
         <Title>Events</Title>
 
         <Reminder
+          type="Event"
           body="Workout - legs, arms and running"
           icon={"🙋🏻‍♂️"}
           time={new Date().toISOString()}
